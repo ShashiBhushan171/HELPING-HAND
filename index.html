@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body >
+    <div class="gridWrapper">
+    <div class="wrappedItem1 container my-3">
+      <div class="home1">
+        <h1>Complaint Page</h1>
+      <div class="card">
+        <div class="card-body">
+          <div class="label">
+            <label>Complaint Type</label>
+          <select name="typeOfComplaint" id="typeOfComplaint">
+            <option value="type1">Type 1</option>
+            <option value="type2">Type 2</option>
+            <option value="type3">Type 3</option>
+            <option value="type4">Type 4</option>
+          </select>
+          </div>
+          
+          <div class="form-group">
+            <div class="label">
+              <label for="state">State:</label> &nbsp;
+            <select name="state" id="state" form="carform">
+              <option value="Haryana">Haryana</option>
+              <option value="Punjab">Punjab</option>
+              <option value="Rajasthan">Rajasthan</option>
+              <option value="Uttar Pradesh">Uttar Pradesh</option>
+              <option value="Madhya Pradesh">Madhya Pradesh</option>
+              
+            </select>
+            </div>
+            <div class="label">
+              <label for="howManyDays">How Many Days</label>
+            <input type="number" id="howManyDays" />
+            </div>
+            <div class="label">
+              <p>Brief</p>
+            <textarea
+              class="form-control my-2"
+              placeholder="Type here..."
+              id="addBrief"
+              rows="3"
+            ></textarea>
+            </div>
+            
+          </div>
+          <div class="btn">
+            <button class="btn btn-primary" id="addBtn">Add Complaint</button>
+          </div>
+      </div>
+      
+        </div>
+      </div>
+      
+      <h1>Your Complaints</h1>
+        
+        <div id="notes" class="row container-fluid"></div>
+      
+    </div>
+
+    <div class="homeMenu ">
+      <h2>Menu</h2>
+      <ul>
+        <li><a href="home1.html">Home</a></li>
+        <li><a href="index.html">Complaint Page</a></li>
+        <li><a href="displayTypeWise.html">Display Type Wise</a></li>
+        <li><a href="displayPlaceWise.html">Display Place Wise</a></li>
+        <li><a href="gallery.html">Gallery of Complaints</a></li>
+      </ul>
+    </div>
+  </div>
+    <script src="js/app.js"></script>
+  </body>
+</html>

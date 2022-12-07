@@ -1,0 +1,129 @@
+/* universal selector (it is used for hole html page)*/
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+ } 
+
+/* element selector (here h1 h2 is id name) */
+h1,h2{
+    text-align: center;
+}
+/* class selector (here gridwrapper is class name) */
+.gridWrapper{
+    display: grid ;
+    grid-template-columns: 4fr 1fr;
+    grid-auto-rows: (100px,auto);
+}
+.wrappedItem1{
+    grid-column: 1;
+    grid-row: 1;
+
+}
+.homeMenu{
+    grid-column: 2;
+    grid-row: 1;
+    background: orangered;
+    height: 100vh;
+    padding-top: 30px;
+}
+.homeMenu h2{
+    font-family:sans-serif;
+    font-size: 40px;
+    text-decoration: underline;
+    align-items: center;
+    text-align: center;
+}
+.homeMenu ul{
+    
+    list-style: none;
+    padding-left: 15px;
+}
+.homeMenu ul li{
+    margin-top: 30px;
+    font-size: 18px;
+    border-radius: 8px;
+    padding: 8px;
+    margin-right: 20px;
+    text-align: center;
+    background-color: #fff;
+    transition: 0.5s;
+
+}
+.homeMenu ul li a{
+    text-decoration: none;
+    color: #000;
+    font-family: sans-serif;
+}
+.homeMenu ul li:hover{
+    transform: scale(0.9);
+}
+.wrappedItem1{
+    text-align: center;
+    margin-top: 30px;
+    font-family: sans-serif;
+    
+}
+.home1{
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px 0;
+    width: 800px;
+    margin: auto;
+}
+.wrappedItem1 h1{
+    font-size: 40px;
+    color: orangered;
+    padding: 10px 0;
+    text-decoration: underline;
+}
+.card-body{
+    margin: 20px 0;
+}
+.label{
+    margin: 20px;
+    font-size: 20px;
+}
+select,input{
+    padding: 8px;
+    color: #888;
+    border: 1px solid #333;
+    outline: none;
+    border-radius: 8px;
+}
+.form-control{
+    width: 300px;
+    height: 100px;
+    resize: none;
+    border-radius: 8px;
+    outline: none;
+    padding: 10px;
+}
+.form-control:focus{
+    border: 1px solid orange;
+}
+.btn{
+    transition: 0.3s;
+}
+.btn button{
+    padding: 10px 15px;
+    background-color: orangered;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 14px;
+}
+.btn:hover{
+    transform: scale(0.95);
+}
+#notes{
+    margin: 20px 0;
+    color: #888;
+}
+.label:last-child{
+    display: flex;
+    margin-left: 260px;
+}
+.label p{
+    padding-right: 12px;
+}
